@@ -1,0 +1,2 @@
+cron_title#:#ECS-Aufgaben
+cron_title_description#:#Wenn aktiviert, können alle ECS-Aufgaben über Cron-Jobs ausgeführt werden.
