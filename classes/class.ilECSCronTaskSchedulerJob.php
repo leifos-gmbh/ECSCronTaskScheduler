@@ -25,6 +25,11 @@ class ilECSCronTaskSchedulerJob extends \ilCronJob
      */
     private $plugin = null;
 
+    /**
+     * @var null | \ilCronJobResult
+     */
+    private $result = null;
+
 
     /**
      * ilECSCronTaskSchedulerJob constructor.
@@ -35,6 +40,7 @@ class ilECSCronTaskSchedulerJob extends \ilCronJob
 
         $this->logger = $DIC->logger()->wsrv();
         $this->plugin = \ilECSCronTaskSchedulerPlugin::getInstance();
+        $this->result = new \ilCronJobResult();
     }
 
     /**
